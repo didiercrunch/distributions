@@ -1,8 +1,11 @@
+var normal = require('./distributions/normal.js');
+var uniform = require('./distributions/uniform.js');
+var studentt = require('./distributions/studentt.js');
 
-var files = ['normal', 'uniform', 'studentt'];
+var distributions = [normal, uniform, studentt];
 
-for (var i = 0, l = files.length; i < l; i++) {
-  var fns = require('./distributions/' + files[i] + '.js');
+for (var i = 0, l = distributions.length; i < l; i++) {
+  var fns = distributions[i];
   var keys = Object.keys(fns);
 
   for (var n = 0, r = keys.length; n < r; n++) {

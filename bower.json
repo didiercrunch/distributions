@@ -1,0 +1,28 @@
+{
+  "name": "distributions",
+  "main": "dist/distributions.js",
+  "version": "0.2.1",
+  "homepage": "https://github.com/AndreasMadsen/distributions",
+  "authors": [
+    "Andreas Madsen <amwebdk@gmail.com>"
+  ],
+  "description": "A collection of probability distribution functions",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "distribution",
+    "normal",
+    "studentt",
+    "uniform"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

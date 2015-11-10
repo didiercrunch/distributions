@@ -5,9 +5,10 @@
   "author": "Andreas Madsen <amwebdk@gmail.com>",
   "main": "./distributions.js",
   "scripts": {
-    "test": "tap test/simple/*"
+    "test": "tap test/simple/*",
+    "build": "browserify distributions.js --standalone distributions -o dist/distributions.js"
   },
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "git://github.com/AndreasMadsen/distributions.git"
   },
@@ -18,9 +19,10 @@
     "uniform"
   ],
   "dependencies": {
-    "mathfn": "0.3.x"
+    "mathfn": "git://github.com/didiercrunch/mathfn.git"
   },
   "devDependencies": {
+    "browserify": "^12.0.1",
     "tap": "0.6.x"
   },
   "license": "MIT"
